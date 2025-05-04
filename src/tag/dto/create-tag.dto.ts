@@ -1,4 +1,10 @@
-// src/category/dto/create-category.dto.ts
-export class CreateTagDto {
-    name: string;
-  }
+// src/category/dto/create-tag.dto.ts
+import { ApiProperty } from '@nestjs/swagger';  
+
+export class CreateTagDto {  
+  @ApiProperty({  
+    description: 'Nama tag',  
+    example: 'Programming',  
+  })
+  name: string;  
+}
