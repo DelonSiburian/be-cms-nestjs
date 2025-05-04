@@ -18,5 +18,5 @@ export default new DataSource({
   migrations: ['src/migrations/**/*{.ts,.js}'],
   migrationsRun: false,
   logging: true,
-  ssl: false,
+  ssl: true,
 });

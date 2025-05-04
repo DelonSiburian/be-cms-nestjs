@@ -30,7 +30,7 @@ import { TagModule } from './tag/tag.module';
         migrations: ['dist/migrations/*.js'],
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         autoLoadEntities: true,
-        ssl: false,
+        ssl: true,
       }),
     }),
     AuthModule,
